@@ -1,0 +1,50 @@
+
+
+// Descriptive color variables
+
+$white                  : #fff;
+$black                  : #000;
+
+$Anakiwa-light-blue     : #9DD3FF;
+$Calypso-dark-blue      : #30627e;
+$Dolphin-purple         : #675A85;
+$Tiber                  : #073242;
+$Golden-Grass           : #E0AB27;
+$Nevada-grey            : #626F7F;
+
+// Functional color variable
+
+$main-background-color        : $Anakiwa-light-blue;
+$secondary-background-color   : $Nevada-grey;
+
+$text-color                   : $Calypso-dark-blue;
+$text-color-lighter           : lighten($text-color, 10%);
+$heading-color                : $Dolphin-purple;
+
+$hover-color                  : $Tiber;
+$hover-background-color       : $Golden-Grass;
+
+
+// Font stacks
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-helvetica  : 'Helvetica Neue', $stack-sans-serif;
+
+// Text transform
+
+$case : uppercase;
+
+// Margin
+
+$center : 0 auto;
+
+// Font sizes
+
+$base-font-size : 16px;
+$base-line      : 24px;
+
+//Breakpoints
+
+$brkpoint-sm    : 1px;
+$brkpoint-md    : 768px;
+$brkpoint-lg    : 1024px;

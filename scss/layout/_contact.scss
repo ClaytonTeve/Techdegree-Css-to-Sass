@@ -1,0 +1,36 @@
+.contact {
+	@extend %bot-padding;
+	@include mq(medium) {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	li {
+		@extend %centered;
+		margin-bottom: 10px;
+	}
+
+	a {
+		font-weight: normal;
+		font-size: 1.35em;
+		color: $text-color;
+	}
+
+	span {
+		font-weight: 200;
+		margin-right: 15px;
+		color: $text-color-lighter;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		@include mq(large) {
+			font-size: 1.75em;
+		}
+	}
+
+}

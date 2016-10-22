@@ -1,0 +1,84 @@
+.main-header,
+.main-nav ul {
+	@include flexbox ($direction: column);
+}
+
+.main-header {
+	@include mq(medium) {
+		height: 200px;
+		justify-content: flex-end;
+	}
+
+	@include mq(large) {
+		height: auto;
+		flex-direction: row;
+	}
+}
+
+.logo {
+	font-size: em(18px);
+	align-self: center;
+
+	@include mq(large) {
+		margin-right: auto;
+	}
+}
+
+.main-nav li{
+	@extend %centered;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: $white;
+
+	@include mq(medium) {
+		background-color: transparent;
+	}
+
+	@include mq(large) {
+		margin-right: .65em;
+		margin-left: .65em;
+	}
+}
+
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	@extend %centered;
+}
+
+.main-nav a {
+	text-transform: $case;
+	font-size: 1em;
+	font-weight: bold;
+	display: block;
+	color: $text-color;
+
+	@include mq(large) {
+		font-size: em(18px);
+	}
+
+	&:hover {
+		color: $hover-color;
+		background-color: $hover-background-color;
+	}
+
+}
+
+.main-nav ul {
+	margin: 0;
+	padding: 0;
+
+	@include mq(medium) {
+		margin-top: 1em;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
+
+.main-nav,
+.main-nav ul {
+		@include mq(large) {
+		margin-top: 0;
+		align-self: center;
+	}
+}

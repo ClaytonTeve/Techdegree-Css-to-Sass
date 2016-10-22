@@ -1,0 +1,22 @@
+// Center text
+
+%centered {
+  text-align: center;
+}
+
+// Padding bottom
+
+%bot-padding {
+  padding-bottom: em(50px);
+}
+
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

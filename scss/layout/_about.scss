@@ -1,0 +1,47 @@
+.profile-img {
+	width: 80%;
+	margin: 50px auto 10px;
+
+	@include mq(medium) {
+		margin: 0;
+	}
+}
+
+.about {
+	@extend %clearfix;
+
+	@include mq(medium) {
+		padding: 50px 0;
+		@include flexbox (wrap, space-around)
+	}
+}
+
+//Medium styles
+
+@include mq(medium) {
+
+	.bio p {
+		text-align: left;
+		margin: 0;
+		font-size: em(20px);
+	}
+
+	.about-item {
+		flex: 1;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.bio {
+		flex: 1.4;
+	}
+
+}
+
+//Large styles
+
+@include mq(large) {
+	.bio p {
+		font-size: 1.6em;
+	}
+}

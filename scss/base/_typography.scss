@@ -1,0 +1,20 @@
+body {
+	font-family: $stack-helvetica;
+	font-size: $base-font-size;
+ 	line-height: ($base-line/$base-font-size);
+}
+
+p {
+	font-size: em(24px);
+	font-weight: 200;
+	margin-bottom: em(40px);
+	@extend %centered;
+}
+
+h2 {
+	text-transform: $case;
+	font-size: em(18px);
+	@extend %centered;
+	padding: 50px 0 50px;
+	margin: 0;
+}

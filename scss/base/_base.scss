@@ -1,0 +1,26 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contact li,
+nav li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+h2 {
+
+  @include mq(large){
+  padding-top: 30px;
+  margin-top: 0;
+  }
+}
