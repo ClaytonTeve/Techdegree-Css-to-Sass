@@ -7,3 +7,36 @@
     line-height: 0;
   }
 }
+@include mq(small) {
+
+
+  .mob-nav {
+    @include flexbox( wrap );
+    justify-content: space-between;
+    height: 100px;
+  }
+
+
+  .mob-nav img {
+    position: absolute;
+    right: 2%;
+    width: 50px;
+    margin: 28px 0;
+    cursor: pointer;
+    box-shadow: -1px 1px 1px $text-color;
+    background: lighten($text-color, 30%);
+    border-radius: 10%;
+  }
+
+  .mob-nav h1{
+    position: absolute;
+    font-size: em(28px);
+    left: 5%;
+  }
+}
+
+@include mq(medium) {
+  .mobile-nav-toggle {
+    display: none;
+  }
+}
