@@ -11,6 +11,7 @@ $Dolphin-purple         : #675A85;
 $Tiber                  : #073242;
 $Golden-Grass           : #E0AB27;
 $Nevada-grey            : #626F7F;
+$Surfie-green           : #0E6B8D;
 
 // Functional color variable
 
@@ -23,6 +24,8 @@ $heading-color                : $Dolphin-purple;
 
 $hover-color                  : $Tiber;
 $hover-background-color       : $Golden-Grass;
+
+$top-border-color             :$Surfie-green;
 
 
 // Font stacks
@@ -42,6 +45,12 @@ $center : 0 auto;
 
 $base-font-size : 16px;
 $base-line      : 24px;
+
+$extra-large-text : 28px;
+$large-text       : 22px;
+$medium-text      : 18px;
+$small-text       : 16px;
+$extra-small-text : 12px;
 
 //Breakpoints
 

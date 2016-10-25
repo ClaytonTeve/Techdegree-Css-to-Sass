@@ -12,7 +12,7 @@
 
 	@include mq(medium) {
 		padding: 50px 0;
-		@include flexbox (wrap, space-around)
+		@include flexbox (wrap, space-around);
 	}
 }
 
@@ -23,7 +23,7 @@
 	.bio p {
 		text-align: left;
 		margin: 0;
-		font-size: em(20px);
+		font-size: $large-text;
 	}
 
 	.about-item {
@@ -38,10 +38,10 @@
 
 }
 
-//Large styles
-
 @include mq(large) {
+
 	.bio p {
-		font-size: 1.6em;
+		font-size: $extra-large-text;
 	}
+
 }

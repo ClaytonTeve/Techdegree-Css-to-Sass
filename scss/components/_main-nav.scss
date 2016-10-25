@@ -16,7 +16,7 @@
 }
 
 .logo {
-	font-size: em(18px);
+	font-size: $medium-text;
 	align-self: center;
 
 	@include mq(large) {
@@ -48,13 +48,13 @@
 
 .main-nav a {
 	text-transform: $case;
-	font-size: 1em;
+	font-size: $small-text;
 	font-weight: bold;
 	display: block;
 	color: $text-color;
 
 	@include mq(large) {
-		font-size: em(18px);
+		font-size: $medium-text;
 	}
 
 	&:hover {

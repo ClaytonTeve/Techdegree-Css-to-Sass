@@ -5,7 +5,7 @@ body {
 }
 
 p {
-	font-size: em(24px);
+	font-size: $large-text;
 	font-weight: 200;
 	margin-bottom: em(40px);
 	@extend %centered;
@@ -13,7 +13,7 @@ p {
 
 h2 {
 	text-transform: $case;
-	font-size: em(18px);
+	font-size: $medium-text;
 	@extend %centered;
 	padding: 50px 0 50px;
 	margin: 0;

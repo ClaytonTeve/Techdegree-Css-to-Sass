@@ -19,7 +19,7 @@
 }
 
 h4 {
-	font-size: 1.5em;
+	font-size: $medium-text;
 	font-weight: normal;
 	@extend %centered;
 	margin-bottom: 0;
@@ -52,7 +52,7 @@ figcaption {
 
 	p {
 		font-weight: 200;
-		font-size: 1em;
+		font-size: $small-text;
 		color: $text-color;
 	}
 
